@@ -29,5 +29,8 @@ def remove_strawberry(contacts)
         }
       }
 
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors]
+  contacts.each do |name, data|
+    data.each do |attribute, value|
+      if value == "strawberry"
+        
 end
