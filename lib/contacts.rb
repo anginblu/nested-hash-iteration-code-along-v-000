@@ -15,12 +15,11 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
-  contacts.each do |name, data|
+  contacts.each do |person, data|
     data.each do |attribute, value|
-      if value == "strawberry"
+      if attribute == "strawberry"
         data.delete_if {|ice_cream| ice_cream == "strawberry"}
         binding.pry
-
       end
     end
   end
