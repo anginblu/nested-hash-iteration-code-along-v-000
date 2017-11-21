@@ -15,7 +15,7 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
-  contacts:
+  contacts =
       {
         "Jon Snow" => {
           name: "Jon",
